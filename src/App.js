@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   const [usersList, setUserList] = useState([]);
 
-  const addUserHandler = (userName, userAge) => {
+  const addUserHandler = (userName, userAge, collegeName) => {
     setUserList((prevUserList) => {
-      return [...prevUserList, {name: userName, age: userAge, id: Math.random().toString()}]
+      return [...prevUserList, {name: userName, age: userAge, collegeName: collegeName, id: Math.random().toString()}]
     })
   }
   return (
@@ -21,5 +21,3 @@ function App() {
 }
 
 export default App;
-
-
